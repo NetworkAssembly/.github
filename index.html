@@ -9,7 +9,7 @@
         <link rel="icon" href="icon.svg" type="image/svg+xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" />
         <style>
             * {
                 margin: 0;
@@ -27,6 +27,8 @@
 
             body {
                 background: white;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
             }
 
             #container {
@@ -35,7 +37,6 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                gap: 8px;
             }
 
             #logo {
@@ -43,10 +44,14 @@
                 width: 100%;
             }
 
-            #footer {
+            #contact {
+                padding: 8px 16px;
                 font-family: "Manrope", sans-serif;
-                font-size: 12px;
-                color: #86868b;
+                font-weight: 500;
+                font-size: 14px;
+                text-decoration: none;
+                color: white;
+                background: black;
             }
         </style>
     </head>
@@ -54,7 +59,7 @@
     <body>
         <div id="container">
             <img src="logo.svg" id="logo" draggable="false" />
-            <div id="footer">128 City Road, London, United Kingdom, EC1V 2NX</div>
+            <a href="/contact" id="contact">Contact &rarr;</a>
         </div>
     </body>
 </html>
