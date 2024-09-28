@@ -9,7 +9,7 @@
         <link rel="icon" href="icon.svg" type="image/svg+xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" />
         <style>
             * {
                 margin: 0;
@@ -21,7 +21,7 @@
 
             html,
             body,
-            #container {
+            .container {
                 height: 100%;
             }
 
@@ -31,34 +31,35 @@
                 -moz-osx-font-smoothing: grayscale;
             }
 
-            #container {
+            .container {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
 
-            #logo {
+            .logo {
                 max-width: 640px;
                 width: 100%;
             }
 
-            #contact {
-                padding: 8px 16px;
+            .contact {
+                padding: 6px 12px;
                 font-family: "Manrope", sans-serif;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 14px;
                 text-decoration: none;
                 color: white;
                 background: black;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
             }
         </style>
     </head>
 
     <body>
-        <div id="container">
-            <img src="logo.svg" id="logo" draggable="false" />
-            <a href="/contact" id="contact">Contact &rarr;</a>
+        <div class="container">
+            <img src="logo.svg" class="logo" draggable="false" />
+            <a href="/contact" class="contact">Contact &rarr;</a>
         </div>
     </body>
 </html>
