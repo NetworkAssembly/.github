@@ -1,1 +1,1 @@
-[<img src="logo.svg">](https://networkassembly.com)
+[<img src="hero.svg">](https://networkassembly.com)
